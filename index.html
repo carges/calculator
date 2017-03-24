@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="main.css">
+    <!-- Page title -->
+    <title>Calculator</title>
+  </head>
+
+<body>
+
+  <div class="text-center divTitle">Calculator <i class="fa fa-calculator" aria-hidden="true"></i></div>
+
+  <div class="container-fluid">
+
+  <div class="row">
+
+  <div class="col-md-2 col-sm-4 col-xs-6 col-md-offset-5 col-sm-offset-4 col-xs-offset-3" id='calcContainer'>
+
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-10 col-sm-offset-1 col-xs-offset-1"><p id='inputString'></p></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-10 col-sm-offset-1 col-xs-offset-1 text-center"><a href="#" class='btn btn-danger' id='ACbtn'>AC</a></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-10 col-sm-offset-1 col-xs-offset-1 text-center">
+        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary" id="7btn">7</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary" id="8btn">8</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary" id="9btn">9</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary" id="subOperator">-</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-10 col-sm-offset-1 col-xs-offset-1 text-center">
+        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary" id="4btn">4</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary" id="5btn">5</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary" id="6btn">6</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary" id="mulOperator">*</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-10 col-sm-offset-1 col-xs-offset-1 text-center">
+        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary" id="1btn">1</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary" id="2btn">2</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary" id="3btn">3</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary" id="sumOperator">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 col-sm-10 col-xs-10 col-sm-offset-1 col-xs-offset-1 text-center">
+        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary" id="0btn">0</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary" id="commaBtn">.</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary" id="eqBtn">=</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary" id="divOperator">/</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+  </div>
+
+  <footer class="footer"><hr>Coded by <a href="https://www.freecodecamp.com/carges">carges</a></footer>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- My script -->
+<script src="main.js"></script>
+
+</html>
